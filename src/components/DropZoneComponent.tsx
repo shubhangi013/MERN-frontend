@@ -1,8 +1,8 @@
 import { useCallback, FunctionComponent, Dispatch } from "react"
-import { useDropzone } from "react-dropzone"
+import { useDropzone } from "react-dropzone" 
 const DropZoneComponent : FunctionComponent<{setFile:Dispatch<any>}>= ({setFile}) => { 
 
-  const onDrop= useCallback(
+  const onDrop= useCallback( 
     (acceptedFiles) => {
       console.log(acceptedFiles);
       setFile(acceptedFiles[0])
@@ -11,7 +11,6 @@ const DropZoneComponent : FunctionComponent<{setFile:Dispatch<any>}>= ({setFile}
   )
   const {getRootProps, getInputProps, isDragAccept, isDragReject}= useDropzone({onDrop,
   multiple:false,
-  accept: "image/png",
   });
 
   return (
@@ -25,7 +24,7 @@ const DropZoneComponent : FunctionComponent<{setFile:Dispatch<any>}>= ({setFile}
   :
   <>
       <p>DRAG AND DROP HERE!</p>
-        <p className="mt-2 text-base text-gray-300">only some files</p>
+        <p className="mt-2 text-base text-gray-300">Drop you files!</p>
   </>
 
 }
