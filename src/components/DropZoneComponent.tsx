@@ -14,8 +14,7 @@ const DropZoneComponent : FunctionComponent<{setFile:Dispatch<any>}>= ({setFile}
   });
 
   return (
-    <div className="p-4 w-full" >
-      <div {...getRootProps()} className="box">
+      <div {...getRootProps()} className="box p-4 w-full">
         <input {...getInputProps()}/>
         <div className="flex flex-col items-center justify-center border-2  rounded-xl">
           <img src="/images/folder.png" alt="folder" className="image" />
@@ -31,7 +30,6 @@ const DropZoneComponent : FunctionComponent<{setFile:Dispatch<any>}>= ({setFile}
         
         </div>
       </div>
-    </div>
   )
 }
 
