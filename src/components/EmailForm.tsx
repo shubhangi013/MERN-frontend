@@ -29,8 +29,8 @@ const handleEmail= async (e)=>{
 
 
   return (
-    <div className="flex flex-col items-center justify-center w-full p-2 space-y-3">
-      <h3>Wanna save time? send your file directly via email!</h3>
+    <div className="flex flex-col items-center justify-center w-full p-2 space-y-3 ">
+      <h3 className="dark:text-gray-300 text-gray-800">Wanna save time? send your file directly via email!</h3>
       <form className="flex flex-col items-center justify-center w-full p-2 space-y-3" onSubmit={handleEmail} >
         <input type="email" className="p-1 text-white bg-gray-800 border-2 focus:outline-none" placeholder="Email from" required onChange={e=>setEmailFrom(e.target.value)} value= {emailFrom}/>
         <input type="email" className="p-1 text-white bg-gray-800 border-2 focus:outline-none" placeholder="Email to" required onChange={e=>setEmailTo(e.target.value)} value={emailTo} />
