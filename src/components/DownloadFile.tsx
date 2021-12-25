@@ -3,7 +3,7 @@ const DownloadFile = ({downloadPageLink}) => {
     <div className="p-1">
       <h1 className="my-2 text-lg font-medium">Use the below given URL and share your file!</h1>
       <div className="flex space-x-3">
-        <span className="break-all"> {downloadPageLink} </span>
+        <span className="break-all animate-charcter-link"> {downloadPageLink} </span>
         <img src="/images/copy.png" alt="copy" className="w-8 h-8 object-contain cursor-pointer"
         onClick={()=>{
           navigator.clipboard.writeText(downloadPageLink)
