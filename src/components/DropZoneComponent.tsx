@@ -17,7 +17,7 @@ const DropZoneComponent : FunctionComponent<{setFile:Dispatch<any>}>= ({setFile}
     <div className="p-4 w-full" >
       <div {...getRootProps()} className="box">
         <input {...getInputProps()}/>
-        <div className="flex flex-col items-center justify-center border-2 border-dashed border-yellow-light rounded-xl">
+        <div className="flex flex-col items-center justify-center border-2  rounded-xl">
           <img src="/images/folder.png" alt="folder" className="image" />
 {
   isDragReject? <p>Sorry unaccepted file format</p>
