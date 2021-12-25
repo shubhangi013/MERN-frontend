@@ -1,7 +1,7 @@
 import axios from "axios";
 import "tailwindcss/tailwind.css";
 import "../../styles/globals.css";
-
+import { ThemeProvider } from 'next-themes'
 axios.defaults.baseURL=process.env.NEXT_PUBLIC_API_BASE_ENDPOINT;
 
 function MyApp({ Component, pageProps }) {

@@ -4,6 +4,8 @@ import { useState } from "react";
 import axios from 'axios';
 import DownloadFile from "@components/DownloadFile";
 import EmailForm from "@components/EmailForm";
+import DarkMode from "@components/DarkMode";
+
 export default function Home() {
 
   const [file, setFile] = useState(null)
@@ -43,9 +45,10 @@ export default function Home() {
     setDownloadPageLink(null)
   }
   return (
-    <div className=" flex flex-col items-center justify-center ">
+    <div className=" flex flex-col items-center justify-center dark:bg-gray-900 bg-white">
+      <DarkMode/>
       <h1 className="animate-charcter font-sans text-center">DROP A FILE!</h1>
-      <div className="w-96 flex flex-col items-center bg-gray-800 shadow-xl rounded-xl jutify-center">
+      <div className="w-96 flex flex-col items-center dark:bg-gray-800 bg-pink-100 shadow-xl rounded-xl jutify-center">
        { 
        !downloadPageLink&&
         <DropZoneComponent setFile={setFile}/>
