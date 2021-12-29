@@ -23,7 +23,7 @@ const DropZoneComponent : FunctionComponent<{setFile:Dispatch<any>}>= ({setFile}
   :
   <>
       <p className="dark:text-gray-300 text-gray-800">DRAG AND DROP HERE!</p>
-        <p className="mt-2 text-base dark:text-gray-300 text-gray-800">Drop you files!</p>
+        <p className="mt-2 text-base dark:text-gray-300 text-gray-800">Drop you files except PDFs :(!</p>
   </>
 
 }
